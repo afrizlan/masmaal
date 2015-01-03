@@ -29,7 +29,7 @@
 							  <div class="control-group">
 								<label class="control-label" for="NO_TRANSAKSI_BANK">NO. TRANSAKSI</label>
 								<div class="controls">
-								  <input class="input-large focused" name="NO_TRANSAKSI_BANK" type="text" value="<?php echo $data_pemasukan_bank['NO_TRANSAKSI'];?>" readonly="readonly">
+								  <input class="input-large focused" name="NO_TRANSAKSI" type="text" value="<?php echo $data_pemasukan_bank['NO_TRANSAKSI'];?>" readonly="readonly">
 								</div>
 							  </div>
 							 <div class="control-group">
@@ -73,7 +73,7 @@
 							  <div class="control-group">
 								<label class="control-label" for="TAHUN_LAPORAN">TAHUN TRANSAKSI</label>
 								<div class="controls">
-								  <select name="TAHUN_LAPORAN" size="1" id="TAHUN_LAPORAN" value="<?php echo $data_pemasukan_kas['TAHUN_LAPORAN'];?>">
+								  <select name="TAHUN_LAPORAN" size="1" id="TAHUN_LAPORAN" value="<?php echo $data_pemasukan_bank['TAHUN_LAPORAN'];?>">
 									<?php
 								 for ($i=2014;$i<=2150;$i++)
 								 {

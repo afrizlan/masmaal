@@ -4,7 +4,7 @@ include 'DB_driver.php';
 
 $no_transaksi= $_POST['NO_TRANSAKSI'];
 $user_id= $_POST['user_id'];
-$kode_pengeluaran= $_POST['KODE_PENGELUARAN'];
+$kode_pengeluaran= $_POST['KODE_KATEGORI'];
 $nama_pengeluaran= $_POST['NAMA_PENGELUARAN'];
 $tanggal= $_POST['TANGGAL'];
 $bulan_laporan= $_POST['BULAN_LAPORAN'];

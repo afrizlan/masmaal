@@ -46,7 +46,7 @@
 						<div class="control-group">
 							<label class="control-label" for="KODE_KAS">KODE KATEGORI:</label>
 								<div class="controls">
-									<input class="input-xlarge focused" id="KODE_KATEGORI" name="KODE_PEMASUKAN" type="text" value="">
+									<input class="input-xlarge focused" id="KODE_KATEGORI" name="KODE_KATEGORI" type="text" value="">
 									<!--<select id="KODE_PEMASUKAN" name="kode_pemasukan" data-rel="chosen">
 										<?php
 										//mengambil nama-nama propinsi yang ada di database

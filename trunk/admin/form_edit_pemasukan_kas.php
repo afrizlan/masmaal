@@ -87,13 +87,13 @@
 							 <div class="control-group">
 								<label class="control-label" for="MASUK_KAS">MASUK</label>
 								<div class="controls">
-								  <input class="input-large focused" id="MASUK_KAS" name="MASUK" type="text" value="<?php echo number_format($data_pemasukan_kas['MASUK']);?>">
+								  <input class="input-large focused" id="MASUK_KAS" name="MASUK" type="text" value="<?php echo $data_pemasukan_kas['MASUK'];?>">
 								</div>
 							  </div>
 							  <div class="control-group">
 								<label class="control-label" for="KELUAR_KAS">KELUAR</label>
 								<div class="controls">
-								  <input class="input-large focused" id="KELUAR_KAS" name="KELUAR" type="text" value="<?php echo number_format($data_pemasukan_kas['KELUAR']);?>">
+								  <input class="input-large focused" id="KELUAR_KAS" name="KELUAR" type="text" value="<?php echo $data_pemasukan_kas['KELUAR'];?>">
 								</div>
 							  </div>
 							 <div class="control-group">
