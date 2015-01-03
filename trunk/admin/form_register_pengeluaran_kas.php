@@ -36,6 +36,12 @@
 								  <input class="input-large focused" name="NO_TRANSAKSI" type="text" value="<?php echo $data_pengeluaran_kas['ID']+1; }?>">
 								</div>
 							  </div>
+							  <div class="control-group">
+								<label class="control-label" for="USER_ID">PEGAWAI :</label>
+								<div class="controls">
+								  <input class="input-large focused" id="USER_ID" name="user_id" type="text" value="<?php echo $_SESSION['USERNAME_PEGAWAI']; ?>" readonly="readonly">
+								</div>
+							  </div>
 								<div class="control-group">
 								<label class="control-label" for="KODE_PENGELUARAN">KODE KAS:</label>
 								<div class="controls">

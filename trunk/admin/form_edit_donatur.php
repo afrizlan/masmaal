@@ -33,6 +33,12 @@
 								  <input class="input-xlarge focused" name="ID_TRANSAKSI" type="text" value="<?php echo $data_tim['ID_TRANSAKSI'];?>" readonly="readonly">
 								</div>
 							  </div>
+							  <div class="control-group">
+								<label class="control-label" for="USER_ID">PEGAWAI :</label>
+								<div class="controls">
+								  <input class="input-large focused" id="USER_ID" name="user_id" type="text" value="<?php echo $_SESSION['USERNAME_PEGAWAI']; ?>" readonly="readonly">
+								</div>
+							  </div>
 							   <div class="control-group">
 								<label class="control-label" for="TANGGAL_TRANSAKSI">TANGGAL TRANSAKSI</label>
 								<div class="controls">

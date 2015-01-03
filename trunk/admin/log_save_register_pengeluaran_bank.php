@@ -3,6 +3,7 @@
 include 'DB_driver.php';
 
 $no_transaksi= $_POST['NO_TRANSAKSI'];
+$user_id= $_POST['user_id'];
 $kode_pengeluaran= $_POST['KODE_PENGELUARAN'];
 $nama_pengeluaran= $_POST['NAMA_PENGELUARAN'];
 $tanggal= $_POST['TANGGAL'];
@@ -21,6 +22,7 @@ $set= true;
 	$query="INSERT INTO data_transaksi(
 			FLAG,
 			NO_TRANSAKSI,
+			USER_ID,
 			KODE_KATEGORI,
 			NAMA_PENGELUARAN,
 			TANGGAL,
@@ -30,6 +32,7 @@ $set= true;
 			KETERANGAN) VALUES
 			('1',
 			'$no_transaksi',
+			'$user_id',
 			'$kode_pengeluaran',
 			'$nama_pengeluaran',
 			'$tanggal',
