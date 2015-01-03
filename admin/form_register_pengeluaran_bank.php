@@ -36,6 +36,12 @@
 								  <input class="input-large focused" name="NO_TRANSAKSI" type="text" value="<?php echo $data_pengeluaran_bank['ID_BANK']+1; }?>">
 								</div>
 							  </div>
+							  <div class="control-group">
+								<label class="control-label" for="USER_ID">PEGAWAI :</label>
+								<div class="controls">
+								  <input class="input-large focused" id="USER_ID" name="user_id" type="text" value="<?php echo $_SESSION['USERNAME_PEGAWAI']; ?>" readonly="readonly">
+								</div>
+							  </div>
 							 <div class="control-group">
 								<label class="control-label" for="KODE_BANK">KODE BANK:</label>
 								<div class="controls">

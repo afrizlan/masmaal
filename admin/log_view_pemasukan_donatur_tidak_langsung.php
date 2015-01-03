@@ -5,6 +5,7 @@ $query = "SELECT * FROM data_transaksi_donatur Where JUMLAH_DONASI_L=0 ORDER BY 
 $hasil = mysql_query($query);
 while ($data = mysql_fetch_array($hasil)) {
     $ID_TRANSAKSI=$data['ID_TRANSAKSI'];
+	$USER_ID=$data['USER_ID'];
 	$TANGGAL_TRANSAKSI=$data['TANGGAL_TRANSAKSI'];
 	$NAMA_DONATUR=$data['NAMA_DONATUR'];
 	$JUMLAH_DONASI_L=$data['JUMLAH_DONASI_TL'];
@@ -13,6 +14,7 @@ while ($data = mysql_fetch_array($hasil)) {
 	echo "
 	<tr>
 	<td align=right><center>$data[ID_TRANSAKSI]</center></td>
+	<td><center>$data[USER_ID]</center></td>
 	<td><center>$data[TANGGAL_TRANSAKSI]</center></td>
 	<td><center>$data[NAMA_DONATUR]</center></td>
 	<td><center>"; echo number_format($data[JUMLAH_DONASI_TL]); echo "</center></td>

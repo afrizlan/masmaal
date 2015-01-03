@@ -38,6 +38,12 @@
 								</div>
 							  </div>
 						<div class="control-group">
+								<label class="control-label" for="USER_ID">PEGAWAI :</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="USER_ID" name="user_id" type="text" value="<?php echo $_SESSION['USERNAME_PEGAWAI']; ?>" readonly="readonly">
+								</div>
+							  </div>
+						<div class="control-group">
 							<label class="control-label" for="KODE_KAS">KODE KATEGORI:</label>
 								<div class="controls">
 									<input class="input-xlarge focused" id="KODE_PEMASUKAN" name="kode_pemasukan" type="text" value="">

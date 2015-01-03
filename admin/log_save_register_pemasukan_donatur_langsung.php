@@ -3,9 +3,11 @@
 include 'DB_driver.php';
 
 $no_transaksi= $_POST['ID_TRANSAKSI'];
+$user_id= $_POST['USER_ID'];
 $nama_donatur= $_POST['NAMA_DONATUR'];
 $tanggal_transaksi= $_POST['TANGGAL_TRANSAKSI'];
 $jumlah_donasi_l= $_POST['JUMLAH_DONASI_L'];
+$kode_donatur= $_POST['KODE_DONATUR'];
 $keterangan= $_POST['KETERANGAN'];
 $set= true;
 
@@ -17,6 +19,7 @@ $set= true;
 	}else{
 	$query="INSERT INTO data_transaksi_donatur(
 			ID_TRANSAKSI,
+			USER_ID,
 			TANGGAL_TRANSAKSI,
 			NAMA_DONATUR,
 			JUMLAH_DONASI_L,
@@ -24,6 +27,7 @@ $set= true;
 			KODE_DONATUR,
 			KETERANGAN) VALUES
 			('$no_transaksi',
+			'$user_id',
 			'$tanggal_transaksi',					
 			'$nama_donatur',
 			'$jumlah_donasi_l',

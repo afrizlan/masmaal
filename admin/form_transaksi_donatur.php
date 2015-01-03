@@ -61,6 +61,7 @@
 						  <thead>
 							  <tr>
 									<td rowspan="1" valign="middle"><b><center>BUKTI TRANSAKSI</center></b></td>
+									<td rowspan="1" valign="middle"><b><center>PEGAWAI</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>TANGGAL TRANSAKSI</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>NAMA DONATUR</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>JUMLAH DONASI</center></b></td>
@@ -121,6 +122,7 @@ include"log_view_pemasukan_donatur_langsung.php";
 						  <thead>
 							 <tr>
 									<td rowspan="1" valign="middle"><b><center>BUKTI TRANSAKSI</center></b></td>
+									<td rowspan="1" valign="middle"><b><center>PEGAWAI</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>TANGGAL TRANSAKSI</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>NAMA DONATUR</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>JUMLAH DONASI</center></b></td>
