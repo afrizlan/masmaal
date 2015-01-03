@@ -15,16 +15,16 @@ include('header.php');
 			<div class="row-fluid">
 				<div class="box span12">
 					<div class="box-header well">
-						<h2><i class="icon-info-sign"></i> Introduction</h2>
+						<h2><i class="icon-info-sign"></i>Tentang Mas-Maal</h2>
 					</div>
 					<div class="box-content">
 					<div class="page-header">
-					<h1>MAS-MAAL <small>Masjidil Maal</small></h1>
+					<h1>MAS-MAAL <small>Pengelolaan Keuangan Masjid</small></h1>
 					</div>
-						<p>Mas-Maal adalah sebuah aplikasi keuangan yang dibuat dan didesain dalam memberikan laporan keuangan khususnya Masjid. 
+						<p>Aplikasi keuangan yang dibuat dan didesain dalam memberikan laporan keuangan khususnya Masjid. 
 						Aplikasi ini mampu menampilkan laporan secara detail dan juga grafik.Sehingga masjid dapat melihat, membandingkan serta 
 						mempertimbangkan keadaan dan rencana keuangan selanjutnya.</p>
-						<p><blockquote><b>When Operating Editing and Publishing Become Easy</b></blockquote></p>
+						<p><blockquote><b>When Operating, Editing, and Publishing Become Easy</b></blockquote></p>
 						<div class="clearfix"></div>
 					</div>
 				</div>
