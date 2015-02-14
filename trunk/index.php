@@ -12,7 +12,7 @@ include("header.php"); ?>
 			<div>
             <div class="row-fluid">
 				<div class="span8 center login-header">
-					<h1>MASMAAL (APLIKASI KEUANGAN MASJID)</h1>
+					<h1></h1>
 				</div><!--/span-->
 			</div><!--/row-->
 			
