@@ -32,7 +32,7 @@
 							  <div class="control-group">
 								<label class="control-label" for="KODE PEMASUKAN">KODE PEMASUKAN</label>
 								<div class="controls">
-								  <input class="input-xlarge focused" name="KODE_PEMASUKAN" type="text" value="<?php echo $data_tim['KODE_PEMASUKAN'];?>" readonly="readonly">
+								  <input class="input-xlarge focused" name="KODE_PEMASUKAN" type="text" value="<?php echo $data_tim['KODE_PEMASUKAN'];?>">
 								</div>
 							  </div>
 							   <div class="control-group">

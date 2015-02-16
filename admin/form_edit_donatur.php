@@ -30,7 +30,7 @@
 							 <div class="control-group">
 								<label class="control-label" for="ID_TRANSAKSI">ID TRANSAKSI</label>
 								<div class="controls">
-								  <input class="input-xlarge focused" name="ID_TRANSAKSI" type="text" value="<?php echo $data_tim['ID_TRANSAKSI'];?>" readonly="readonly">
+								  <input class="input-xlarge focused" name="ID_TRANSAKSI" type="text" value="<?php echo $data_tim['ID_TRANSAKSI'];?>" >
 								</div>
 							  </div>
 							  <div class="control-group">

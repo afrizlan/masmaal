@@ -33,7 +33,7 @@
 							  <div class="control-group">
 								<label class="control-label" for="KODE_DONATUR">KODE DONATUR</label>
 								<div class="controls">
-								  <input class="input-xlarge focused" name="KODE_DONATUR" type="text" value="<?php echo $data_tim['KODE_DONATUR'];?>" readonly="readonly">
+								  <input class="input-xlarge focused" name="KODE_DONATUR" type="text" value="<?php echo $data_tim['KODE_DONATUR'];?>">
 								</div>
 							  </div>
 							   <div class="control-group">

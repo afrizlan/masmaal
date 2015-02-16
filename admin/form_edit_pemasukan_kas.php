@@ -30,7 +30,7 @@
 							  <div class="control-group">
 								<label class="control-label" for="NO_TRANSAKSI_KAS">NO. TRANSAKSI</label>
 								<div class="controls">
-								  <input class="input-large focused" name="NO_TRANSAKSI" type="text" value="<?php echo $data_pemasukan_kas['NO_TRANSAKSI'];?>" readonly="readonly">
+								  <input class="input-large focused" name="NO_TRANSAKSI" type="text" value="<?php echo $data_pemasukan_kas['NO_TRANSAKSI'];?>">
 								</div>
 							  </div>
 							 <div class="control-group">
