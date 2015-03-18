@@ -72,7 +72,7 @@
 	$counter1 = 0;
 			 //$total = mysql_num_rows(mysql_query("SELECT IdKat,TglTerjual FROM penjualan_buku WHERE IdKat='$kat' AND LEFT(TglTerjual,4)='2012' AND  MID(TglTerjual,6,2)='02'"));
 			 //$total = mysql_query("SELECT MASUK_KAS FROM data_transaksi_kas WHERE BULAN_LAPORAN='$id_kat'");
-			 $total_q = mysql_query("SELECT SUM(KELUAR) AS KELUAR_KAS FROM data_transaksi WHERE BULAN_LAPORAN='$id_kat' AND TAHUN_LAPORAN='$tahun_laporan' AND KODE_KATEGORI='$kode_kas'" );
+			 $total_q = mysql_query("SELECT SUM(KELUAR) AS KELUAR_KAS FROM data_transaksi WHERE BULAN_LAPORAN='$id_kat' AND TAHUN_LAPORAN='$tahun_laporan' AND KODE_KATEGORI='$kode_kas' AND FLAG='0'" );
 			 $counter1++;
     		
 
@@ -120,7 +120,7 @@
 	$counter1 = 0;
 			 //$total = mysql_num_rows(mysql_query("SELECT IdKat,TglTerjual FROM penjualan_buku WHERE IdKat='$kat' AND LEFT(TglTerjual,4)='2012' AND  MID(TglTerjual,6,2)='02'"));
 			 //$total = mysql_query("SELECT MASUK_KAS FROM data_transaksi_kas WHERE BULAN_LAPORAN='$id_kat'");
-			 $total_q = mysql_query("SELECT SUM(KELUAR) AS KELUAR_BANK FROM data_transaksi WHERE BULAN_LAPORAN='$id_kat' AND TAHUN_LAPORAN='$tahun_laporan' AND KODE_KATEGORI='$kode_kas'" );
+			 $total_q = mysql_query("SELECT SUM(KELUAR) AS KELUAR_BANK FROM data_transaksi WHERE BULAN_LAPORAN='$id_kat' AND TAHUN_LAPORAN='$tahun_laporan' AND KODE_KATEGORI='$kode_kas' AND FLAG='1'" );
 			 $counter1++;
     		
 
