@@ -70,7 +70,7 @@
 								  <input class="input-xlarge focused" id="TANGGAL" name="TANGGAL" type="date" value="">
 								</div>
 							  </div>
-							  <div class="control-group">
+							  <!--<div class="control-group">
 								<label class="control-label" for="BULAN_KAS">BULAN MASUK:</label>
 								<div class="controls">
 								  <select name="BULAN_LAPORAN" size="1" id="BULAN_LAPORAN">
@@ -83,8 +83,8 @@
 							  ?>
 								  </select>
 								</div>
-							  </div>
-							  <div class="control-group">
+							  </div>-->
+							  <!--<div class="control-group">
 								<label class="control-label" for="TAHUN_KAS">TAHUN MASUK:</label>
 								<div class="controls">
 								  <select name="TAHUN_LAPORAN" size="1" id="TAHUN_LAPORAN">
@@ -96,7 +96,7 @@
 							  ?> 
 								  </select>
 								</div>
-							  </div>
+							  </div>-->
 							   <div class="control-group">
 								<label class="control-label" for="MASUK">MASUK :</label>
 								<div class="controls">

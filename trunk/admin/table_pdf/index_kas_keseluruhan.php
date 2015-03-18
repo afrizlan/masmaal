@@ -109,11 +109,11 @@ for($j=0;$j<$i;$j++)
 {
 //menampilkan data dari hasil query database
 $pdf->Cell(1.7,1,$cell1[$j][1],'LBTR',0,'C');
-$pdf->Cell(2.5,1,$cell1[$j][5],'LBTR',0,'C');
-$pdf->Cell(2.3,1,$cell1[$j][2],'LBTR',0,'C');
-$pdf->Cell(7.5,1,$cell1[$j][8],'LBTR',0,'L');
-$pdf->Cell(2.5,1,number_format($cell1[$j][6]),'LBTR',0,'C');
+$pdf->Cell(2.5,1,$cell1[$j][6],'LBTR',0,'C');
+$pdf->Cell(2.3,1,$cell1[$j][3],'LBTR',0,'C');
+$pdf->Cell(7.5,1,$cell1[$j][9],'LBTR',0,'L');
 $pdf->Cell(2.5,1,number_format($cell1[$j][7]),'LBTR',0,'C');
+$pdf->Cell(2.5,1,number_format($cell1[$j][8]),'LBTR',0,'C');
 
 $pdf->Ln();
 }

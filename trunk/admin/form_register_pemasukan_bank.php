@@ -69,33 +69,33 @@
 								  <input class="input-xlarge focused" id="TANGGAL" name="TANGGAL" type="date" value="">
 								</div>
 							  </div>
-							  <div class="control-group">
+							  <!--<div class="control-group">
 								<label class="control-label" for="BULAN_KAS">BULAN MASUK:</label>
 								<div class="controls">
 								  <select name="BULAN_LAPORAN" size="1" id="BULAN_LAPORAN">
 									<?php
-								 $bulan=array("","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
-								 for ($i=1;$i<=12;$i++)
-								 {
-								   echo "<option value=".$i.">".$bulan[$i]."</option>";
-								 }
+								 //$bulan=array("","Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+								 //for ($i=1;$i<=12;$i++)
+								 //{
+								   //echo "<option value=".$i.">".$bulan[$i]."</option>";
+								 //}
 							  ?>
 								  </select>
 								</div>
-							  </div>
-							  <div class="control-group">
+							  </div>-->
+							  <!--<div class="control-group">
 								<label class="control-label" for="TAHUN_KAS">TAHUN MASUK:</label>
 								<div class="controls">
 								  <select name="TAHUN_LAPORAN" size="1" id="TAHUN_LAPORAN">
 									<?php
-								 for ($i=2014;$i<=2150;$i++)
+								 /*for ($i=2014;$i<=2150;$i++)
 								 {
 								   echo "<option value=".$i.">".$i."</option>";
-								 }
+								 }*/
 							  ?> 
 								  </select>
 								</div>
-							  </div>
+							  </div>-->
 							   <div class="control-group">
 								<label class="control-label" for="MASUK">MASUK :</label>
 								<div class="controls">
