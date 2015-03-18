@@ -2,7 +2,7 @@
 $host ="localhost";
 $user="root";
 $password="";
-$database="sales_act2";
+$database="masmaal";
 include('fungsi_indotgl.php');
 $tgl_awal=$_POST['tgl_awal_detil_kas3'];
 $tgl_akhir=$_POST['tgl_akhir_detil_kas3'];
@@ -19,15 +19,9 @@ mysql_select_db($database);
 //$query4 =mysql_query("Select * from data_transaksi_kas WHERE TANGGAL_LAPORAN between '$tgl_awal' and '$tgl_akhir' AND KODE_KAS='$kategori2'") or die(mysql_error());
 //$detail_pemasukan_kas = mysql_fetch_array($query4);
 
-$query4 =mysql_query("SELECT no_transaksi_kas, kode_kas, tanggal_laporan, data_transaksi_kas.keterangan, masuk_kas, keluar_kas
-FROM data_transaksi_kas WHERE data_transaksi_kas.TANGGAL_LAPORAN BETWEEN '$tgl_awal' and '$tgl_akhir' AND data_transaksi_kas.NAMA_PEMASUKAN ='$kategori2'
-UNION 
-(SELECT no_transaksi_bank, kode_bank, tanggal_laporan, data_transaksi_bank.keterangan, masuk_bank, keluar_bank
-FROM data_transaksi_bank WHERE data_transaksi_bank.TANGGAL_LAPORAN BETWEEN '$tgl_awal' AND  '$tgl_akhir' AND data_transaksi_bank.NAMA_PEMASUKAN ='$kategori2') ORDER BY TANGGAL_LAPORAN") or die(mysql_error());
+$query4 =mysql_query("SELECT * from data_transaksi WHERE TANGGAL between '$tgl_awal' and '$tgl_akhir' AND NAMA_PEMASUKAN='$kategori2'") or die(mysql_error());
 
-$query5 = mysql_query("SELECT IFNULL((totalmasukkategorykas),0) + IFNULL((totalmasukkategorybank),0) as totaldetail 
-from (SELECT sum(MASUK_KAS)-sum(KELUAR_KAS) as totalmasukkategorykas from data_transaksi_kas  WHERE TANGGAL_LAPORAN between '$tgl_awal' and '$tgl_akhir' AND NAMA_PEMASUKAN='$kategori2') totalmasukkategorykas, 
-(SELECT sum(MASUK_BANK)-sum(KELUAR_BANK) as totalmasukkategorybank from data_transaksi_bank WHERE TANGGAL_LAPORAN between '$tgl_awal' and '$tgl_akhir' AND NAMA_PEMASUKAN='$kategori2')totalmasukkategorybank") or die(mysql_error());
+$query5 = mysql_query("SELECT IFNULL(sum(MASUK),0) as totaldetail from data_transaksi WHERE TANGGAL between '$tgl_awal' and '$tgl_akhir' AND NAMA_PEMASUKAN='$kategori2'") or die(mysql_error());
 $detail_pemasukan_kas1 = mysql_fetch_array($query5);
 
 //Variabel untuk iterasi
@@ -84,10 +78,10 @@ $pdf->AddPage();
 $pdf->SetFont("Arial","B",15);
 $pdf->Cell(19,1,'LAPORAN REKAPITULASI TRANSAKSI KEUANGAN',0,0,'C');
 $pdf->Ln();
-$pdf->Cell(19,1,'MASJID AL-IRSYAD SURABAYA',0,0,'C');
+$pdf->Cell(19,1,'MASMAAL (APLIKASI KEUANGAN MASJID)',0,0,'C');
 $pdf->Ln();
 $pdf->SetFont("Arial","B",8);
-$pdf->Cell(19,1,'Jl. Sultan Iskandar Muda No. 46 Surabaya. Email : masjidalirsyadsurabaya@gmail.com',0,0,'C');
+$pdf->Cell(19,1,'Komplek Ruko Sentra Taman Gapura G-16 Citraland Surabaya. Email : maitdesignproject@gmail.com',0,0,'C');
 $pdf->Ln();
 $pdf->SetFont("Arial","B",12);
 $pdf->Cell(19,1,'Periode :'.$tgl1.' s/d '.$tgl2,0,0,'C');
@@ -108,12 +102,12 @@ $pdf->SetFont('Times','',10);
 for($j=0;$j<$i;$j++)
 {
 //menampilkan data dari hasil query database
-$pdf->Cell(1.7,1,$cell2[$j][0],'LBTR',0,'C');
-$pdf->Cell(2.5,1,$cell2[$j][2],'LBTR',0,'C');
-$pdf->Cell(2.5,1,$cell2[$j][1],'LBTR',0,'C');
-$pdf->Cell(7,1,$cell2[$j][3],'LBTR',0,'L');
-$pdf->Cell(2.5,1,number_format($cell2[$j][4]),'LBTR',0,'C');
-$pdf->Cell(2.5,1,number_format($cell2[$j][5]),'LBTR',0,'C');
+$pdf->Cell(1.7,1,$cell2[$j][1],'LBTR',0,'C');
+$pdf->Cell(2.5,1,$cell2[$j][6],'LBTR',0,'C');
+$pdf->Cell(2.5,1,$cell2[$j][3],'LBTR',0,'C');
+$pdf->Cell(7,1,$cell2[$j][9],'LBTR',0,'L');
+$pdf->Cell(2.5,1,number_format($cell2[$j][7]),'LBTR',0,'C');
+$pdf->Cell(2.5,1,number_format($cell2[$j][8]),'LBTR',0,'C');
 $pdf->Ln();
 }
 

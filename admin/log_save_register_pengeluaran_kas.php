@@ -4,11 +4,13 @@ include 'DB_driver.php';
 
 $no_transaksi= $_POST['NO_TRANSAKSI'];
 $user_id= $_POST['user_id'];
-$kode_pengeluaran= $_POST['KODE_PENGELUARAN'];
+$kode_pengeluaran= $_POST['KODE_KATEGORI'];
 $nama_pengeluaran= $_POST['NAMA_PENGELUARAN'];
 $tanggal= $_POST['TANGGAL'];
-$bulan_laporan= $_POST['BULAN_LAPORAN'];
-$tahun_laporan= $_POST['TAHUN_LAPORAN'];
+list($tahun, $bulan, $tanggalsaja) = explode("-", $tanggal);
+$bulan_laporan = $bulan;
+$tahun_laporan = $tahun;
+//$tahun_laporan= $_POST['TAHUN_LAPORAN'];
 $keluar= $_POST['KELUAR'];
 $keterangan= $_POST['KETERANGAN'];
 $set= true;

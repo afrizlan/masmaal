@@ -92,7 +92,7 @@
 					<div class="control-group">
 						<label class="control-label" for="KATEGORI_PEMASUKAN">Kategori Pemasukan Kas dan Bank</label>
 							<div class="controls">
-								<select id="KATEGORI_PEMASUKAN" name="KATEGORI PEMASUKAN" data-rel="chosen">
+								<select id="KATEGORI_PEMASUKAN" name="KATEGORI_PEMASUKAN" data-rel="chosen">
 								  <?php
 									//mengambil nama-nama propinsi yang ada di database
 										$CITY = mysql_query("SELECT DISTINCT * FROM kategory_pemasukan "); //WHERE NAMA_PEMASUKAN LIKE '%Donatur%'
@@ -133,9 +133,9 @@
 							  </div>
 							  
 							  	  <div class="control-group">
-								<label class="control-label" for="KATEGORI_PEMASUKAN">Kategori Pengeluaran Kas dan Bank</label>
+								<label class="control-label" for="KATEGORI_PENGELUARAN">Kategori Pengeluaran Kas dan Bank</label>
 								<div class="controls">
-								  <select id="KATEGORI_PENGELUARAN" name="KATEGORI PENGELUARAN" data-rel="chosen">
+								  <select id="KATEGORI_PENGELUARAN" name="KATEGORI_PENGELUARAN" data-rel="chosen">
 								  <?php
 									//mengambil nama-nama propinsi yang ada di database
 										$CITY = mysql_query("SELECT DISTINCT NAMA_PENGELUARAN, KODE_PENGELUARAN FROM kategory_pengeluaran "); //WHERE NAMA_PEMASUKAN LIKE '%Donatur%'
