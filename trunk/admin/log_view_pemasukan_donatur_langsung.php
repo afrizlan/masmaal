@@ -15,10 +15,10 @@ while ($data = mysql_fetch_array($hasil)) {
 	<tr>
 	<td align=right><center>$data[ID_TRANSAKSI]</center></td>
 	<td><center>$data[USER_ID]</center></td>
-	<td><center>$data[TANGGAL_TRANSAKSI]</center></td>
 	<td><center>$data[NAMA_DONATUR]</center></td>
-	<td><center>"; echo number_format($data[JUMLAH_DONASI_L]); echo "</center></td>
-	<td><center>$data[KODE_DONATUR]</center></td>";
+	<!--<td><center>$data[KODE_DONATUR]</center></td>-->
+	<td><center>$data[TANGGAL_TRANSAKSI]</center></td>
+	<td><center>"; echo number_format($data[JUMLAH_DONASI_L]); echo "</center></td>";
 	echo "
 	<td><center>$data[KETERANGAN]</center></td>
 	<td align=center>

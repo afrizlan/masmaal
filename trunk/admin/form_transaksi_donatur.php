@@ -62,10 +62,10 @@
 							  <tr>
 									<td rowspan="1" valign="middle"><b><center>BUKTI TRANSAKSI</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>PEGAWAI</center></b></td>
-									<td rowspan="1" valign="middle"><b><center>TANGGAL TRANSAKSI</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>NAMA DONATUR</center></b></td>
+									<!--<td rowspan="1" valign="middle"><b><center>KODE</center></b></td>-->
+									<td rowspan="1" valign="middle"><b><center>TANGGAL</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>JUMLAH DONASI</center></b></td>
-									<td rowspan="1" valign="middle"><b><center>KODE DONATUR</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>KETERANGAN</center></b></td>	
 									<td rowspan="1" valign="middle"><b><center>ACTION</center></b></td>	
 								</td>
@@ -123,10 +123,10 @@ include"log_view_pemasukan_donatur_langsung.php";
 							 <tr>
 									<td rowspan="1" valign="middle"><b><center>BUKTI TRANSAKSI</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>PEGAWAI</center></b></td>
-									<td rowspan="1" valign="middle"><b><center>TANGGAL TRANSAKSI</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>NAMA DONATUR</center></b></td>
+									<!--<td rowspan="1" valign="middle"><b><center>KODE</center></b></td>-->
+									<td rowspan="1" valign="middle"><b><center>TANGGAL</center></b></td>									
 									<td rowspan="1" valign="middle"><b><center>JUMLAH DONASI</center></b></td>
-									<td rowspan="1" valign="middle"><b><center>KODE DONATUR</center></b></td>
 									<td rowspan="1" valign="middle"><b><center>KETERANGAN</center></b></td>	
 									<td rowspan="1" valign="middle"><b><center>ACTION</center></b></td>	
 							</tr>
