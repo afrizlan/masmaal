@@ -38,7 +38,7 @@
 							  <div class="control-group">
 								<label class="control-label" for="USER_ID">PEGAWAI :</label>
 								<div class="controls">
-								  <input class="input-large focused" id="USER_ID" name="user_id" type="text" value="<?php echo $_SESSION['USERNAME_PEGAWAI']; ?>" readonly="readonly">
+								  <input class="input-large focused" id="USER_ID" name="USER_ID" type="text" value="<?php echo $_SESSION['USERNAME_PEGAWAI']; ?>" readonly="readonly">
 								</div>
 							  </div>
 							  <div class="control-group">
