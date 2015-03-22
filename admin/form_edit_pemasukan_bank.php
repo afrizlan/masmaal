@@ -56,7 +56,7 @@
 								  <input class="input-large focused" id="TANGGAL_LAPORAN" name="TANGGAL" type="date" value="<?php echo $data_pemasukan_bank['TANGGAL'];?>">
 								</div>
 							  </div>
-							  <div class="control-group">
+							  <!--<div class="control-group">
 								<label class="control-label" for="TANGGAL_KAS">BULAN TRANSAKSI</label>
 								<div class="controls">
 								  <select name="BULAN_LAPORAN" size="1" id="BULAN_LAPORAN" value="<?php ?>">
@@ -69,8 +69,8 @@
 							  ?>
 								  </select>
 								  </div>
-							  </div>
-							  <div class="control-group">
+							  </div>-->
+							  <!--<div class="control-group">
 								<label class="control-label" for="TAHUN_LAPORAN">TAHUN TRANSAKSI</label>
 								<div class="controls">
 								  <select name="TAHUN_LAPORAN" size="1" id="TAHUN_LAPORAN" value="<?php echo $data_pemasukan_bank['TAHUN_LAPORAN'];?>">
@@ -82,7 +82,7 @@
 							  ?> 
 								  </select>
 								</div>
-							  </div>
+							  </div>-->
 							 <div class="control-group">
 								<label class="control-label" for="MASUK_BANK">MASUK</label>
 								<div class="controls">
